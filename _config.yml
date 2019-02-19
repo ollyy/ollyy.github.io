@@ -1,0 +1,10 @@
+url: "http://ollyj.uk"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
