@@ -1,17 +1,11 @@
 ---
-layout: default
+layout: default-ns
 ---
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  {%- if site.entries.size > 0 -%}
     <div class="site-banner">
-      <h1 class="banner-heading">blog</h1>
+      <h1 class="banner-heading">{{ page.title | downcase}}</h1>
     </div>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -28,9 +22,6 @@ layout: default
         {%- if post.tag == "essay" -%}
           <span class="badge badge-pill badge-warning">Essay</span>
         {%- endif -%}
-        {%- if post.tag == "announcement" -%}
-          <span class="badge badge-pill badge-danger">Announcement</span>
-        {%- endif -%}
         &thinsp;
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -44,6 +35,7 @@ layout: default
       {%- endfor -%}
     </ul>
 
+    <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
   {%- endif -%}
 
 </div>

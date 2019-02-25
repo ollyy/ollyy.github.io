@@ -1,0 +1,38 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper" style="">
+    <div class="row footer-contents">
+      <!-- Re-directs -->
+      <div class="col links-left">
+        <a href="{{ social.nexus }}"><i class="fas fa-sign-out-alt"><b>Nexus Music Group</b></i></a>
+        <a href="{{ social.metblue }}"><i class="fas fa-sign-out-alt"><b>Metropolis Blue</b></i></a>
+      </div>
+      <div class="col center">
+        <p class="copyright">&#169; {{ 'now' | date: "%Y" }} Olly Wiggins<p>
+      </div>
+      <div id="splash" class="col-3 splash"><p>
+        <script>
+          var splash = [
+            "Now using Jekyll!",
+            "Thanks Kailan!",
+            "Based on the minima theme",
+            "Lovingly hosted on GitHub Pages",
+            "#473472",
+            "Powered by Pied Piper",
+            "Is there any other Aviato?",
+            "Hear the music!"
+          ];
+
+          var randomItem = splash[Math.floor(Math.random()*splash.length)];
+
+          document.getElementById("splash").innerHTML = randomItem;
+        </script>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+</footer>

@@ -1,0 +1,50 @@
+---
+layout: default-ns
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <!-- change banner colour depending on tag -->
+    <div class="site-banner" style="{%- if page.tag == "post" -%} background-color: #007bff !important; {%- endif -%} 
+                                    {%- if page.tag == "comment" -%} background-color: #28a745 !important; {%- endif -%}
+                                    {%- if page.tag == "essay" -%} background-color: #ffc107 !important; {%- endif -%}
+                                    {%- if page.tag == "announcement" -%} background-color: #dc3545 !important; {%- endif -%}">
+      <h1 class="post-title p-name banner-heading" itemprop="name headline">{{ page.title }}</h1>
+    </div>
+    <p class="post-meta">
+      <!-- tag -->
+      {%- if page.tag == "post" -%}
+        <span class="badge badge-pill badge-primary">Post</span>
+      {%- endif -%}
+      {%- if page.tag == "comment" -%}
+        <span class="badge badge-pill badge-success">Comment</span>
+      {%- endif -%}
+      {%- if page.tag == "essay" -%}
+        <span class="badge badge-pill badge-warning">Essay</span>
+      {%- endif -%}
+      {%- if page.tag == "announcement" -%}
+        <span class="badge badge-pill badge-danger">Announcement</span>
+      {%- endif -%}
+      &thinsp;
+
+      <!-- author -->
+      {%- if page.author -%}
+        Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+      {%- endif -%}
+      &thinsp;on
+
+      <!-- time -->
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+    </p>
+  </header>
+
+  <!-- content -->
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

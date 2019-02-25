@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="row">
+          <!-- image -->
+          <div class="col-md-3 center d-none d-md-block">
+            <img class="img-thumbnail rounded-circle img-fluid profile-img" src="/assets/img/profile.jpg">
+            <h4 class="name">Olly Wiggins</h4>
+            <hr>
+            <!-- links -->
+            <div class="row center">
+              <div class="col-4 center"><a href="{{ social.linkedin }}"><i class="fab fa-linkedin icons"></i></a></div>
+              <div class="col-4 center"><a href="mailto:{{ site.email }}"><i class="fa fa-envelope icons"></i></a></div>
+              <div class="col-4 center"><a href="{{ social.spotify }}"><i class="fab fa-spotify icons"></i></a></div>
+            </div>
+            <p class="caption">university student working in the music industry</p>
+          </div>
+          <div class="col-md-9">{{ content }}</div>
+        </div>
+      </div>
+    </main>
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
