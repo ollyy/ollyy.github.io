@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi there. My name is Olly and I am a university student studying for a degree in Music Business.
 
-I'm new to the music industry but I have been producing music since the age of 13. Alongside Music Business I dabble in DJing, videoography and website design. 
+I'm new to the music industry but I have been producing music since the age of 13. Alongside Music Business I dabble in DJing, videography and website design. 
 
 (*In a nutshell I try new hobbies that interest me and see what sticks*)
 

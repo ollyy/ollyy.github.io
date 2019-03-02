@@ -1,2 +1,2 @@
 # ollyyj.github.io
-My website!
+My website and blog, based on the Jekyll minima theme.
