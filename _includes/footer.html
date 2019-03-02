@@ -8,26 +8,35 @@
         <a href="{{ social.metblue }}"><i class="fas fa-sign-out-alt"><b>Metropolis Blue</b></i></a>
       </div>
       <div class="col center">
-        <p class="copyright">&#169; {{ 'now' | date: "%Y" }} Olly Wiggins<p>
+        <!-- easter egg -->
+        {% assign today_date = 'now' | date: "%d, %B" %}
+        {% if today_date == "17, April" %}
+          Happy birthday Kailan!
+        {% else %}
+          <p class="copyright">&#169; {{ 'now' | date: "%Y" }} Olly Wiggins<p></p>
+        {%- endif -%}
       </div>
-      <div id="splash" class="col-3 splash"><p>
-        <script>
-          var splash = [
-            "Now using Jekyll!",
-            "Thanks Kailan!",
-            "Based on the minima theme",
-            "Lovingly hosted on GitHub Pages",
-            "#473472",
-            "Powered by Pied Piper",
-            "Is there any other Aviato?",
-            "Hear the music!"
-          ];
+      <div id="splash" class="col-3 splash">
+        <p>
+          <script>
+            var splash = [
+              "Now using Jekyll!",
+              "Thanks Kailan!",
+              "Based on the minima theme",
+              "Lovingly hosted on GitHub Pages",
+              "#473472",
+              "Powered by Pied Piper",
+              "Is there any other Aviato?",
+              "Hear the music!",
+              "Yay video games!",
+              "Dear Steve"
+            ];
 
-          var randomItem = splash[Math.floor(Math.random()*splash.length)];
+            var randomItem = splash[Math.floor(Math.random()*splash.length)];
 
-          document.getElementById("splash").innerHTML = randomItem;
-        </script>
-
+            document.getElementById("splash").innerHTML = randomItem;
+          </script>
+        </p>
       </div>
     </div>
 
