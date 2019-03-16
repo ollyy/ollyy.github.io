@@ -1,41 +1,24 @@
 ---
-layout: default-ns
+layout: default
 ---
-  {{ content }}
-
-  {%- if site.entries.size > 0 -%}
-    <div class="site-banner">
-      <h1 class="banner-heading">{{ page.title | downcase}}</h1>
-    </div>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <!-- tag -->
-        {%- if post.tag == "post" -%}
-          <span class="badge badge-pill badge-primary">Post</span>
-        {%- endif -%}
-        {%- if post.tag == "comment" -%}
-          <span class="badge badge-pill badge-success">Comment</span>
-        {%- endif -%}
-        {%- if post.tag == "essay" -%}
-          <span class="badge badge-pill badge-warning">Essay</span>
-        {%- endif -%}
-        &thinsp;
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
-  {%- endif -%}
-
-</div>
+{%- if site.categories.entries.size > 0 -%}
+  <div class="site-banner">
+    <h1 class="banner-heading">{{ page.title | downcase}}</h1>
+  </div>
+  <ul class="post-list list">
+    {%- for post in site.categories.entries -%}
+    <li style="margin-bottom: 0em !important;">
+      <h3>
+        <a class="post-link heading" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
+      <!-- tag -->
+      {%- if post.active == true -%}
+        <span class="badge badge-pill badge-success">Active</span>
+      {%- endif -%}
+      <p>{{ post.description }}</p>
+      <hr>
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

@@ -1,0 +1,26 @@
+---
+layout: default-ns
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <!-- change banner colour depending on tag -->
+    <div class="site-banner" style="{%- if page.active == true -%} background-color: #28a745 !important; {%- endif -%}">
+      <h1 class="post-title p-name banner-heading" itemprop="name headline">{{ page.title }}</h1>
+    </div>
+    <p class="post-meta">
+      <span class="post-meta">{{ page.role }} / {{ page.period }}</span>
+      <!-- tag -->
+      {%- if page.active == true -%}
+        <span class="badge badge-pill badge-success">Active</span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <!-- content -->
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

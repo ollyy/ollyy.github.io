@@ -18,6 +18,7 @@ minima:
 # Hide certain pages by excluding them from the list
 header_pages:
  - about.md
+ - portfolio.md
  - archive.md
 
 # Build settings
