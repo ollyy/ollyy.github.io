@@ -10,7 +10,7 @@ I'm new to the music industry but I have been producing music since the age of 1
 
 (*In a nutshell I try new hobbies that interest me and see what sticks*)
 
-On this site you will find blog posts and my portfolio (*which is coming soon*). I write about anything that comes to my mind. 
+On this site you will find blog posts and my portfolio. I write about anything that comes to my mind. 
 
 I designed the site myself with help from the Jekyll `minima` template - which I have sightly adapted. You can find the repo [here](https://github.com/jekyll/minima). 
 
