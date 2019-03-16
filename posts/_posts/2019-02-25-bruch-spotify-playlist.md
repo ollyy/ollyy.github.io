@@ -2,7 +2,7 @@
 layout: post
 title: "BRUCH: Artist Takeover playlist"
 author: Olly
-tag: announcement
+tag: post
 ---
 
 An artist I am currently managing, BRUCH, has published an "influences" playlist. There's some great stuff on here and I recommend checking it out!
