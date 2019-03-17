@@ -3,12 +3,12 @@ layout: default-ns
 ---
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <div class="site-banner">
+  {%- if site.categories.posts.size > 0 -%}
+    <div class="site-banner" style="background-color: #6c757d !important;">
       <h1 class="banner-heading">{{ page.title | downcase}}</h1>
     </div>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.categories.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
