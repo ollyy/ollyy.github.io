@@ -45,7 +45,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $brand-color;
   }
 }
 
@@ -222,6 +222,7 @@
   .splash {
     font-size: 14px;
     font-style: italic;
+    color: $text-color;
   }
 }
 
@@ -336,6 +337,7 @@
 .name {
   padding-top: 10px;
   text-align: center;
+  color: $text-color;
 }
 
 .social-media-list {
