@@ -5,15 +5,15 @@ description: Thoughts & Pears
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+# generate social links in footer
+social:
+  linkedin: http://linkedin.com/in/olly/
+  spotify: https://open.spotify.com/user/11173788945/playlist/1txSunJXQwNszOElPKUKz6?si=43kMdLSPTOKL9l8vkGXdTw
+  metblue: https://www.facebook.com/metropolisblue
+
 minima:
   date_format: "%b %-d, %Y"
 
-  # generate social links in footer
-  social_links:
-    linkedin: http://linkedin.com/in/olly/
-    spotify: https://open.spotify.com/user/11173788945/playlist/1txSunJXQwNszOElPKUKz6?si=43kMdLSPTOKL9l8vkGXdTw
-    nexus: https://www.instagram.com/nexusmusicuk/
-    metblue: https://www.instagram.com/metropolis.blue/ 
 
 # Hide certain pages by excluding them from the list
 header_pages:
