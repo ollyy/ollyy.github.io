@@ -366,8 +366,25 @@
   }
 }
 
+// Misc
 .caption {
-  padding-top: 45px;
+  margin-bottom: -5px;
+  text-align: center;
+}
+
+.emoji {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.upsidedown {
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -o-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .fourohfour {

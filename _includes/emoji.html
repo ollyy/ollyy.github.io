@@ -1,0 +1,30 @@
+{% assign today_date = 'now' | date: "%d, %B" %}
+{% assign month = 'now' | date: "%B" %}
+<!-- birthday -->
+{% if today_date == "10, February" %}
+  <p role="image" aria-label="cake" class="emoji">🎂</p>
+<!-- valentines -->
+{% elsif today_date == "14, February" %}
+  <p role="image" aria-label="heart" class="emoji">❤️</p>
+<!-- leap year -->
+{% elsif today_date == "29, February" %}
+  <p role="image" aria-label="leap" class="emoji">😳</p>
+<!-- st patrick -->
+{% elsif today_date == "17, March" %}
+  <p role="image" aria-label="clover" class="emoji">☘️</p>
+<!-- pride -->
+{% elsif month == "July" %}
+  <p role="image" aria-label="pride" class="emoji">🏳️‍🌈</p>
+<!-- halloween -->
+{% elsif today_date == "31, October" %}
+  <p role="image" aria-label="pumpkin" class="emoji">🎃</p>
+<!-- fireworks night -->
+{% elsif today_date == "5, November" %}
+  <p role="image" aria-label="fireworks" class="emoji">🎆</p>
+<!-- christmas -->
+{% elsif today_date == "25, December" %}
+  <p role="image" aria-label="christmas" class="emoji">🎄</p>
+<!-- new year -->
+{% elsif today_date == "1, January" %}
+  <p role="image" aria-label="newyear" class="emoji">🥳</p> <!-- party face -->
+{% endif %}
