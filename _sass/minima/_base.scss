@@ -129,11 +129,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: lighten($brand-color, 15%);
+    color: $brand-color !important;
   }
 
   &:hover {
-    color: $text-color;
+    color: $brand-color;
     text-decoration: underline;
   }
 
