@@ -19,6 +19,7 @@ minima:
 header_pages:
  - about.md
  - portfolio.md
+ - playlists.md
  - archive.md
 
 # Build settings
