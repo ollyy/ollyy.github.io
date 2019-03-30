@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: default-ns
 ---
 {%- if site.categories.entries.size > 0 -%}
   <div class="site-banner">
-    <h1 class="banner-heading">{{ page.title | downcase}}</h1>
+    <h1 class="page-title">{{ page.title | downcase}}</h1>
   </div>
+  <hr>
   <ul class="post-list list">
     {%- for post in site.categories.entries -%}
     <li style="margin-bottom: 0em !important;">

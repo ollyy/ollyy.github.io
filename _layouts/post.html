@@ -4,12 +4,8 @@ layout: default-ns
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <!-- change banner colour depending on tag -->
-    <div class="site-banner" style="{%- if page.tag == "post" -%} background-color: #007bff !important; {%- endif -%} 
-                                    {%- if page.tag == "comment" -%} background-color: #28a745 !important; {%- endif -%}
-                                    {%- if page.tag == "essay" -%} background-color: #ffc107 !important; {%- endif -%}
-                                    {%- if page.tag == "announcement" -%} background-color: #dc3545 !important; {%- endif -%}">
-      <h1 class="post-title p-name banner-heading" itemprop="name headline">{{ page.title }}</h1>
+    <div class="site-banner">
+      <h1 class="blog-title" itemprop="name headline">{{ page.title }}</h1>
     </div>
     <p class="post-meta">
       <!-- tag -->

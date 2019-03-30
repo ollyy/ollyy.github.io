@@ -3,10 +3,11 @@ layout: default-ns
 ---
 {%- if site.categories.playlists.size > 0 -%}
   <div class="site-banner">
-    <h1 class="banner-heading">{{ page.title | downcase}}</h1>
+    <h1 class="page-title">{{ page.title | downcase}}</h1>
   </div>
-  {{ content }}
   <hr>
+  {{ content }}
+  <br>
   <div class="container">
     <div class="row flex-column-reverse flex-sm-row">
       {%- for post in site.categories.playlists -%}
