@@ -6,7 +6,6 @@
 
   <body>
     {%- include header.html -%}
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="row">
@@ -24,21 +23,24 @@
         <hr>
         <p> {{ content }} </p>
         <br>
+        <!-- portfolio section -->
         {%- if site.categories.entries.size > 0 -%}
         <ul class="post-list list">
           {%- for post in site.categories.entries -%}
-          <li style="margin-bottom: 0em !important;">
-            <h3>
-              <a class="post-link heading" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h3>
-            <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
-            <!-- tag -->
-            {%- if post.active == true -%}
-              <span class="badge badge-pill badge-success">Active</span>
-            {%- endif -%}
-            <p>{{ post.description }}</p>
-            <hr>
-          </li>
+          {%- if post.feature == true -%}
+            <li style="margin-bottom: 0em !important;">
+              <h3>
+                <a class="post-link heading" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h3>
+              <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
+              <!-- tag -->
+              {%- if post.active == true -%}
+                <span class="badge badge-pill badge-success">Active</span>
+              {%- endif -%}
+              <p>{{ post.description }}</p>
+              <hr>
+            </li>
+          {%- endif -%}
           {%- endfor -%}
         </ul>
         {%- endif -%}
