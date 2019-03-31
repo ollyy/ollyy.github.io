@@ -21,6 +21,9 @@ layout: default-ns
       {%- if page.tag == "announcement" -%}
         <span class="badge badge-pill badge-danger">Announcement</span>
       {%- endif -%}
+      {%- if page.archive == true -%}
+        <span class="badge badge-pill badge-secondary">Archived</span>
+      {%- endif -%}
       &thinsp;
 
       <!-- author -->
