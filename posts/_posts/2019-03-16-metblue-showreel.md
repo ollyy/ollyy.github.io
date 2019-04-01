@@ -3,6 +3,7 @@ layout: post
 title: "Metropolis Blue: Showreel"
 author: Olly
 tag: post
+permalink: /blog/metblue-showreel
 ---
 
 After a successful launch party for the student-run Metropolis Blue record label I created this short montage to show off some of the best moments from the night.

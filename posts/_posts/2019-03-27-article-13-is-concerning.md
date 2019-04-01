@@ -3,6 +3,7 @@ layout: post
 title: "Article 13 Is Concerning"
 author: Olly
 tag: comment
+permalink: /blog/article-13-is-concerning
 ---
 Yesterday the European Copyright Directive had been approved. The legislation holds numerous components (or “Articles”) for member states to achieve. 
 
