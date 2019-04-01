@@ -30,12 +30,14 @@
   font-weight: bold;
   font-size: 80px;
   float: left;
+  word-wrap: break-word;
 }
 
 .blog-title {
   font-weight: bold;
   font-size: 80px;
   float: left;
+  word-wrap: break-word;
 
   @media screen and (max-width: $on-medium) {
     font-size: 50px;

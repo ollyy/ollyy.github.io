@@ -11,4 +11,4 @@ A big thank you to the team, Joe Dallison and [Kailan Blanks](https://www.facebo
 
 *Side note: Can you spot the footage that was shot on an iPhone? Follow up post coming soon.*
 
-<div class='embed-container'><iframe src='https://www.youtube.com/embed//HBZvnWIs9AA' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/HBZvnWIs9AA' frameborder='0' allowfullscreen></iframe></div>
