@@ -25,6 +25,8 @@
         <br>
         <!-- portfolio section -->
         {%- if site.categories.entries.size > 0 -%}
+        <h4>Current Projects</h4>
+        <hr>
         <ul class="post-list list">
           {%- for post in site.categories.entries -%}
           {%- if post.feature == true -%}
