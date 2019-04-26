@@ -303,35 +303,6 @@
 }
 
 /**
-* Playlists
-*/
-
-.pl-object {
-  float: none;
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pl-img {
-  height: 100%;
-  width: 100%;
-  display:block;
-  margin:auto;
-
-  @media screen and (min-width: 414px) and (max-width: 736px) {
-    height: 100%;
-    width: 736px;
-}
-}
-
-.pl-caption {
-  text-align: center;
-}
-
-
-
-/**
  * Posts
  */
 .post-header {
