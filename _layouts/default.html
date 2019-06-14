@@ -14,7 +14,7 @@
           </div>
           <div class="col-9">
             <h3>Olly Wiggins</h3>
-            <p>student &bull; business</p>
+            <p> {{ page.tagline }} </p>
             <a class="socials" href="{{ site.social.linkedin }}"><i class="fab fa-linkedin icons"></i></a>
             <a class="socials" href="{{ site.social.lastfm }}"><i class="fab fa-lastfm-square icons"></i></a>
             <a class="socials" href="mailto:{{ site.email }}"><i class="fa fa-envelope icons"></i></a>
@@ -22,24 +22,20 @@
         </div>
         <hr>
         <p> {{ content }} </p>
-        <br>
         <!-- portfolio section -->
         {%- if site.categories.entries.size > 0 -%}
-        <h4>Current Projects</h4>
         <hr>
         <ul class="post-list list">
           {%- for post in site.categories.entries -%}
           {%- if post.feature == true -%}
             <li style="margin-bottom: 0em !important;">
-              <h3>
-                <a class="post-link heading" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              </h3>
+              <a href="{{ post.link }}"><h4>{{ post.title | escape }}</h4></a>
               <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
               <!-- tag -->
               {%- if post.active == true -%}
                 <span class="badge badge-pill badge-success">Active</span>
               {%- endif -%}
-              <p>{{ post.description }}</p>
+              <p>{{ post.content }}</p>
               <hr>
             </li>
           {%- endif -%}
@@ -47,7 +43,6 @@
         </ul>
         {%- endif -%}
       </div>
-      {%- include emoji.html -%}
     </main>
     {%- include footer.html -%}
 

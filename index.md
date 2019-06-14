@@ -1,5 +1,6 @@
 ---
 layout: default
 title: Home
+tagline: University student
 ---
-I'm a university student studying Music Business. I've been involved in the industry for a number of years - starting out with production and performance - and later moving into marketing and management. You can see a selection of my latest work below.
+Hi! My name is Olly. I’m a university student specialising in business, multimedia and the web. If you would like to find out more check out some of the many projects I am working on below - or take a look at my LinkedIn profile. 

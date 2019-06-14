@@ -29,6 +29,7 @@ body {
 
 p {
   color: $text-color;
+  text-align: justify;
 }
 
 
@@ -215,29 +216,6 @@ pre {
   content: "";
   display: table;
   clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.orange {
-  color: $orange-color;
-}
-
-.grey {
-  color: $grey-color;
-}
-
-.svg-icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  fill: currentColor;
-  padding: 5px 3px 2px 5px;
-  vertical-align: text-bottom;
 }
 
 
