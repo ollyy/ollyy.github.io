@@ -1,2 +1,4 @@
 # ollyyj.github.io
-My website and blog, based on the Jekyll minima theme.
+My small corner of the internet. Based on the Jekyll minima theme.
+
+🌍 [ojw.me](https://ojw.me)
