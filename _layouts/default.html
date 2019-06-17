@@ -8,18 +8,13 @@
     {%- include header.html -%}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="row">
-          <div class="col-3">
-            <img class="rounded-circle img-fluid" src="/assets/img/profile.jpg">
-          </div>
-          <div class="col-9">
-            <h3>Olly Wiggins</h3>
-            <p> {{ page.tagline }} </p>
-            <a class="socials" href="{{ site.social.linkedin }}"><i class="fab fa-linkedin icons"></i></a>
-            <a class="socials" href="{{ site.social.lastfm }}"><i class="fab fa-lastfm-square icons"></i></a>
-            <a class="socials" href="mailto:{{ site.email }}"><i class="fa fa-envelope icons"></i></a>
-          </div>
-        </div>
+        <img class="img-thumbnail rounded-circle img-fluid profile-img" src="/assets/img/profile.jpg">
+        <h1>Olly Wiggins</h1>
+        <ul class="align">
+          <li><a class="icons" href="{{ site.social.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="icons" href="{{ site.social.lastfm }}"><i class="fab fa-lastfm-square"></i></a></li>
+          <li><a class="icons" href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
+        </ul>
         <hr>
         <p> {{ content }} </p>
         <!-- portfolio section -->
@@ -29,7 +24,9 @@
           {%- for post in site.categories.entries -%}
           {%- if post.feature == true -%}
             <li style="margin-bottom: 0em !important;">
-              <a href="{{ post.link }}"><h4>{{ post.title | escape }}</h4></a>
+              <h4>
+                <a href="{{ post.link }}">{{ post.title | escape }}</a>
+              </h4>
               <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
               <!-- tag -->
               {%- if post.active == true -%}

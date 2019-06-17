@@ -98,13 +98,13 @@ figcaption {
 /**
  * Lists
  */
-li {
-  list-style-type: none;
-  padding: 5px 0px;
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
+
+ul.align {
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  zoom:1;
 }
 
 
@@ -115,6 +115,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+h1 {
+  text-align: center;
+}
 
 
 /**
