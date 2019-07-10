@@ -1,6 +1,6 @@
 ---
 title: "Metro Sound"
-role: Digital & Marketing
+role: Digital Marketing
 period: May 2019 - Current
 active: true
 feature: true
