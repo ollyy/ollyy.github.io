@@ -27,11 +27,9 @@
               <h4>
                 <a href="{{ post.link }}">{{ post.title | escape }}</a>
               </h4>
-              <span class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }}</span>
-              <!-- tag -->
-              {%- if post.active == true -%}
-                <span class="badge badge-pill badge-success">Active</span>
-              {%- endif -%}
+              <ul>
+                <li class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }} <span class="badge badge-pill badge-success">Active</span></li>
+              </ul>
               <p>{{ post.content }}</p>
               <hr>
             </li>
