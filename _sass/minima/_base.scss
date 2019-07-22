@@ -1,47 +1,16 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+* {
   margin: 0;
   padding: 0;
-
 }
 
-h1 {
-  font-size: 42px !important;
+html,
+body {
+  height: 100%;
 }
 
-h4 {
-  font-size: 26px !important;
-}
-
-h4 > a {
-  position: relative;
-  text-decoration: none;
-}
-
-h4 > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: $brand-color;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-h4 > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
 /**
  * Basic styling
  */
@@ -75,53 +44,12 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * `main` element
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
-
-
-
-/**
- * Images
- */
-
-iframe {
-  display: block;
-  margin: auto;
-}
-
-.embed-container { 
-  position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
-  overflow: hidden; 
-  max-width: 100%; 
-} 
-.embed-container iframe, .embed-container object, .embed-container embed { 
-  position: absolute; 
-  top: 0; left: 0; 
-  width: 100%; 
-  height: 100%; 
-}
-
-
-/**
- * Figures
- */
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
-}
-
-
 
 /**
  * Lists
@@ -134,19 +62,6 @@ ul li {
   display: inline-block;
   zoom:1;
 }
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
-
-h1 {
-  text-align: center;
-}
-
 
 /**
  * Links
@@ -168,6 +83,32 @@ a {
   }
 }
 
+h4 > a {
+  position: relative;
+  text-decoration: none;
+}
+
+h4 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $brand-color;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+h4 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 
 /**
  * Blockquotes
@@ -184,36 +125,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
-}
-
-code {
-  padding: 1px 5px;
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
 
 /**
  * Wrapper
@@ -243,7 +154,6 @@ pre {
   display: table;
   clear: both;
 }
-
 
 /**
  * Tables

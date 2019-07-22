@@ -1,6 +1,7 @@
 title: Olly Wiggins
 author: Olly Wiggins
 email: olly@ollyj.uk
+dbs: July 2019
 
 # generate social links in footer
 social:
@@ -16,3 +17,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-stickyposts

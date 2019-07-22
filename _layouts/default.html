@@ -1,4 +1,3 @@
-{% assign today_date = 'now' | date: "%d, %B" %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -9,33 +8,40 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <img class="img-thumbnail rounded-circle img-fluid profile-img" src="/assets/img/profile.jpg">
-        <h1>Olly Wiggins</h1>
-        <ul class="align">
-          <li><a class="icons" href="{{ site.social.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="icons" href="{{ site.social.lastfm }}"><i class="fab fa-lastfm-square"></i></a></li>
-          <li><a class="icons" href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
-        </ul>
+        <h1 class="name">Olly Wiggins</h1>
+        <div id="buttons">
+          <a class="button" href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="button" href="{{ site.social.lastfm }}" target="_blank"><i class="fab fa-lastfm-square"></i></a>
+          <a class="button" href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a>
+        </div>
         <hr>
         <p> {{ content }} </p>
+        <hr>
         <!-- portfolio section -->
         {%- if site.categories.entries.size > 0 -%}
-        <hr>
-        <ul class="post-list list">
-          {%- for post in site.categories.entries -%}
-          {%- if post.feature == true -%}
-            <li style="margin-bottom: 0em !important;">
-              <h4>
-                <a href="{{ post.link }}">{{ post.title | escape }}</a>
-              </h4>
-              <ul>
-                <li class="post-meta meta">&#8227; {{ post.role }} / {{ post.period }} <span class="badge badge-pill badge-success">Active</span></li>
-              </ul>
-              <p>{{ post.content }}</p>
-              <hr>
-            </li>
-          {%- endif -%}
+        {% assign sorted = site.categories.entries | sort: "stickiness" %}
+          {%- for post in sorted -%}
+          <div class="card">
+            <div class="row no-gutters"> <!-- Make everything flush with the edge -->
+              <div class="col-3">
+                <p role="image" id="icon">{{ post.emoji }}</p>
+              </div>
+              <div class="col-9">
+                <a href="{{ post.embed }}" target="_blank">
+                  <div class="card-body">
+                    <h4 class="card-title">{{ post.title | escape }}</h4> 
+                    <p class="card-text">{{ post.content }}</p>
+                    {%- if post.type == "position" -%}
+                      <small class="text-muted">Since: {{ post.period }}</small>
+                    {%- elsif post.type == "portfolio" -%}
+                      <small class="text-muted">{{ post.period }}</small>
+                    {%- endif -%}
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
           {%- endfor -%}
-        </ul>
         {%- endif -%}
       </div>
     </main>

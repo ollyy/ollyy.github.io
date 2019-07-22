@@ -1,65 +1,55 @@
 /**
- * Site header
+ * Colour line heading
  */
 .site-header {
-  border-top: 7px solid $brand-color;
+  border-top: 6px solid $brand-color;
   min-height: $spacing-unit;
   line-height: $base-line-height * $base-font-size * 2.25;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
 }
-
-.site-banner {
-  height: 75px;
-  margin-bottom: $spacing-unit;
-}
-
-.banner-heading {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  font-weight: bold;
-  font-size: 80px;
-  color: white;
-  margin-bottom: $spacing-unit;
-}
-
 
 /**
- * Page content
+ * Footer
  */
-.page-content {
-  padding: $spacing-unit 0;
-  flex: 1 0 auto;
-}
 
-.page-heading {
-  @include relative-font-size(2);
-}
+.footer {
+  border-top: 1px solid $grey-color-light;
+  margin-top: $spacing-unit;
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
+  .container {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
+
+  .contents {
+    text-align: center;
+  }
+}
+
+/**
+ * Buttons
+ */
+
+#buttons {
+  text-align: center;
+}
+
+.button {
+  margin-right: 10px;
+  font-size: 36px;
+  color: $brand-color !important;
+}
+
+/**
+ * Content
+ */
+
+h1.name {
+  text-align: center;
 }
 
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
 }
 
 .profile-img {
@@ -69,18 +59,63 @@
   margin: auto;
 }
 
-/**
- * Portfolio
- */
+.card {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.35s;
 
-.list {
-  .heading {
-    font-size: 25px;
+  .row {
+    display: flex;
   }
-  .meta {
-    font-size: 15px;
+  .col-9 {
+    flex: 9;
+    .card-body {
+      padding-left: 0px;
+    }
+  }
+  .col-3 {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title {
+    margin-top: 12px;
+  }
+  #description {
+    margin-right: 12px;
+  }
+
+  #icon {
+    font-size: 50px;
+    @media screen and (max-width: 576px) {
+      font-size: 42px;
+    }
+    margin-bottom: 0px;
   }
 }
+
+/* On mouse-over, add a deeper shadow */
+.card {
+  transition: transform 0.35s; /* Animation */
+  #icon {
+    transition: transform 350ms;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.01);
+
+  /* Animate the emoji when hovered */
+  #icon {
+    transform: scale(1.15);
+  }
+}
+
 
 /**
  * Icons
@@ -88,24 +123,6 @@
 
 .icons {
   color: $brand-color !important;
-  font-size: 30px;
+  font-size: 36px;
   margin-right: 10px;
-}
-
-/**
- * Misc
- */
-
-.emoji {
-  text-align: center;
-  font-size: 30px;
-}
-
-
-/**
- * Grid helpers
- */
-.one-half {
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
 }
