@@ -7,6 +7,6 @@ embed: https://s3.eu-west-2.amazonaws.com/ojw.me-uploads/Metropolis+Blue+Web+Con
 sticky: false
 ---
 
-To aid the development process of the Metropolis Blue webpage I put together concept art heaviliy inspired by the current design of the Metropolis website. 
+To aid the development process of the Metropolis Blue webpage I put together concept art heavily inspired by the current design of the Metropolis website.
 
-Unfortunately this concept art went unused due to time constraints. 
+Unfortunately this concept art went unused due to time constraints.
