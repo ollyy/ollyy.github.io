@@ -34,7 +34,7 @@
 
   .button {
     margin-right: 10px;
-    font-size: 36px;
+    font-size: 32px;
     color: $brand-color !important;
 
     :hover {
@@ -75,6 +75,7 @@ h1.name {
   }
   .col-9 {
     flex: 9;
+    order: 2;
     .card-body {
       padding-left: 0px;
     }

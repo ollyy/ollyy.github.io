@@ -5,8 +5,9 @@ dbs: July 2019
 
 # generate social links in footer
 social:
-  linkedin: http://linkedin.com/in/olly/
-  lastfm: https://www.last.fm/user/ollyyj
+  linkedin: https://linkedin.com/in/olly/
+  lastfm: https://last.fm/user/ollyyj
+  twitter: https://twitter.com/ollyj_
 
 minima:
   date_format: "%b %-d, %Y"
