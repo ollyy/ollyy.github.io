@@ -11,6 +11,10 @@
  * Footer
  */
 
+.pre-footer {
+  text-align: center;
+}
+
 .footer {
   border-top: 1px solid $grey-color-light;
   margin-top: $spacing-unit;
@@ -34,7 +38,7 @@
 
   .button {
     margin-right: 10px;
-    font-size: 32px;
+    font-size: 28px;
     color: $brand-color !important;
 
     :hover {

@@ -22,28 +22,23 @@
         {%- if site.categories.entries.size > 0 -%}
         {% assign sorted = site.categories.entries | sort: "stickiness" %}
           {%- for post in sorted -%}
-          <a href="{{ post.embed }}" target="_blank">
-            <div class="card">
-              <div class="row no-gutters"> <!-- Make everything flush with the edge -->
-                <div class="col-3">
-                  <p role="image" id="icon">{{ post.emoji }}</p>
-                </div>
-                <div class="col-9">
-                  <div class="card-body">
-                    <h4 class="card-title">{{ post.title | escape }}</h4> 
-                    <p class="card-text">{{ post.content }}</p>
-                    {%- if post.type == "position" -%}
-                      <small class="text-muted">Since: {{ post.period }}</small>
-                    {%- elsif post.type == "portfolio" -%}
-                      <small class="text-muted">{{ post.period }}</small>
-                    {%- endif -%}
-                  </div>
+          <div class="card">
+            <div class="row no-gutters"> <!-- Make everything flush with the edge -->
+              <div class="col-3">
+                <p role="image" id="icon">{{ post.emoji }}</p>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h4 class="card-title">{{ post.title | escape }}</h4> 
+                  <p class="card-text">{{ post.content }}</p>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
           {%- endfor -%}
         {%- endif -%}
+        <hr>
+        <p class="pre-footer text-muted">Trust me, all of this is more interesting than it sounds.</p>
       </div>
     </main>
     {%- include footer.html -%}
