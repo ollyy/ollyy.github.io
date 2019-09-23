@@ -47,6 +47,8 @@
   .button {
     margin-right: 10px;
     font-size: 28px;
+    font-weight: bold;
+    vertical-align: middle;
     color: $brand-color !important;
 
     :hover {
