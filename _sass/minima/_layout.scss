@@ -34,8 +34,15 @@
  * Buttons
  */
 
-#buttons {
+#social-icons {
   text-align: center;
+  ul.align {
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    zoom:1;
+  }
 
   .button {
     margin-right: 10px;
@@ -45,6 +52,16 @@
     :hover {
       transform: scale(1.1);
     }
+  }
+}
+
+#videos {
+  ul {
+    list-style-position: inside;
+    list-style-type: none;
+  }
+  li {
+    margin: 3px 0px;
   }
 }
 

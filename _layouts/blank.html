@@ -7,16 +7,10 @@
   <body>
     {%- include header.html -%}
     <main class="page-content" aria-label="Content">
-      <div id="videos" class="wrapper">
+      <div class="wrapper">
         <h1 class="name">{{ page.title }}</h1>
         <hr>
-        <ul>
-          {% assign sorted = site.categories.videos | sort: "stickiness" %}
-          {%- for post in sorted -%}
-            <li><a id="video-list" href="{{post.embed}}">{{post.title}}</a></li>
-            <blockquote>{{post.content}} {{post.date | date_to_long_string}}</blockquote>
-          {%- endfor -%}
-        </ul>
+        <p>{{ content }}</p>
         <br>
         <a class="button" href="/"><i class="fas fa-arrow-alt-circle-left"></i></a>
       </div>

@@ -52,35 +52,11 @@ main {
 }
 
 /**
- * Lists
- */
-
-ul.align {
-  text-align: center;
-}
-ul li {
-  display: inline-block;
-  zoom:1;
-}
-
-/**
  * Links
  */
+
 a {
-  text-decoration: none;
-  color: inherit !important;
-
-  &:hover {
-    text-decoration: none !important;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
+  color: $brand-color !important;
 }
 
 h4 > a {
@@ -118,8 +94,7 @@ blockquote {
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
+  font-size: 15px;
 
   > :last-child {
     margin-bottom: 0;
