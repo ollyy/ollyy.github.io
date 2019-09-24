@@ -43,17 +43,19 @@
     display: inline-block;
     zoom:1;
   }
+}
 
-  .button {
-    margin-right: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    vertical-align: middle;
-    color: $brand-color !important;
+.button {
+  margin-right: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  vertical-align: middle;
+  justify-content: center;
+  color: $brand-color !important;
 
-    :hover {
-      transform: scale(1.1);
-    }
+  :hover {
+    transform: scale(1.1);
   }
 }
 
