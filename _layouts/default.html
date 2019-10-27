@@ -18,9 +18,6 @@
             <a class="button" href="/portfolio">portfolio</a>
           </div>
         </div>
-        <hr>
-        <p> {{ content }} </p>
-        <hr>
         <!-- portfolio section -->
         {%- if site.categories.entries.size > 0 -%}
         {% assign sorted = site.categories.entries | sort: "stickiness" %}
@@ -40,12 +37,9 @@
           </div>
           {%- endfor -%}
         {%- endif -%}
-        <hr>
         <p class="text-muted pre-footer">{{ page.quote }}</p>
       </div>
     </main>
     {%- include footer.html -%}
-
   </body>
-
 </html>

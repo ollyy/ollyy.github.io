@@ -11,6 +11,39 @@ body {
   height: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dark-background-color !important;
+    color: $dark-text-color !important;
+  }
+  p {
+    color: $dark-text-color !important;
+  }
+  a {
+    color: $dark-brand-color !important;
+  }
+  .card {
+    background-color: #161616 !important;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2) !important;
+    h4 {
+      color: #f1f1f1 !important;
+    }
+    p {
+      color: #f2f2f2 !important;
+    }
+  }
+  .site-header {
+    border-top: 6px solid $dark-brand-color !important;
+  }
+  .footer {
+    border-top: 0px solid !important; 
+  }
+  .text-muted {
+    color: #f1f1f1 !important;
+  }
+
+}
+
 /**
  * Basic styling
  */
@@ -55,7 +88,7 @@ main {
  */
 
 a {
-  color: $brand-color !important;
+  color: $brand-color;
 }
 
 h4 > a {
