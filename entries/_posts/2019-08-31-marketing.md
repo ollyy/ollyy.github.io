@@ -1,7 +1,7 @@
 ---
-title: "Digital Marketing for Metro Sound"
+title: "Digital Marketing"
 emoji: 🖥
 sticky: true
 ---
 
-Metro Sound is an electronic music label run by my uni. I keep the Instagram and Facebook pages fresh with upcoming events and marketing campaigns. I also tend to show up at the events to film.
+Social media. Digital communications. Graphic design. Just about anything (almost).
