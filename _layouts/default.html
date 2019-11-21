@@ -12,31 +12,32 @@
         <div id="social-icons">
           <div>
             <a class="button" href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="button" href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a>
-          </div>
-          <div>
-            <a class="button" href="/portfolio">portfolio</a>
+            <a class="button" href="{{ site.social.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+        <br>
+        <h4>Recent work...</h4>
         <!-- portfolio section -->
-        {%- if site.categories.entries.size > 0 -%}
-        {% assign sorted = site.categories.entries | sort: "stickiness" %}
+        <ul>
+          {% assign sorted = site.categories.videos | sort: "stickiness" %}
           {%- for post in sorted -%}
-          <div class="card">
-            <div class="row no-gutters"> <!-- Make everything flush with the edge -->
-              <div class="col-3">
-                <p role="image" id="icon">{{ post.emoji }}</p>
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h4 class="card-title">{{ post.title | escape }}</h4> 
-                  <p class="card-text">{{ post.content }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <li>
+              <a id="video-list" href="{{post.embed}}">{{post.title}}</a>
+              {%- if post.tag == "video" -%}
+                &nbsp;<span class="badge badge-primary">Video</span>
+              {%- elsif post.tag == "design" -%}
+                &nbsp;<span class="badge badge-success">Design</span>
+              {%- elsif post.tag == "web" -%}
+                &nbsp;<span class="badge badge-warning">Web</span>
+              {%- elsif post.tag == "marketing" -%}
+                &nbsp;<span class="badge badge-info">Marketing</span>
+              {%- else -%}
+                &nbsp;
+              {%- endif -%}
+            </li>
+            <blockquote>{{post.content}} {{post.date | date_to_long_string}}</blockquote>
           {%- endfor -%}
-        {%- endif -%}
+        </ul>
         <p class="text-muted pre-footer">{{ page.quote }}</p>
       </div>
     </main>
