@@ -1,11 +1,141 @@
 /**
- * Colour line heading
+ * Headings
  */
-.site-header {
-  border-top: 6px solid $brand-color;
-  min-height: $spacing-unit;
-  line-height: $base-line-height * $base-font-size * 2.25;
+
+h1 {
+  font-family: 'Assistant';
+  font-weight: 800;
+  font-size: 156px;
+  letter-spacing: -4px;
+  margin-bottom: 0px;
+  @media screen and (max-width: 776px) {
+    font-size: 78px;
+  }
 }
+h2 {
+  font-family: 'Assistant';
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 776px) {
+    font-size: 32px;
+  }
+}
+h3 {
+  font-family: 'Assistant';
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 776px) {
+    font-size: 32px;
+  }
+}
+h4 {
+  font-family: 'Assistant';
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  @media screen and (max-width: 776px) {
+    font-size: 28px;
+  }
+}
+
+.header-main {
+  display: flex;
+}
+
+.header-gradient {
+  background: rgb(46,67,137);
+  background: linear-gradient(135deg, rgba(43,80,170,1) 0%, rgba(244,91,105,1) 100%);
+}
+
+.body-gradient {
+  background: rgb(46,67,137);
+  background: linear-gradient(135deg, rgba(43,80,170,1) 0%, rgba(244,91,105,1) 100%);
+}
+
+.header-parralax {
+  min-height: 36em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-body {
+  color: white;
+  align-self: center;
+  @media screen and (max-width: 776px) {
+    text-align: center;
+  }
+  
+}
+
+/**
+ * Buttons and Features
+ */
+
+.social-button {
+  margin-left: 5px;
+  margin-right: 25px;
+  font-size: 56px;
+  color: white;
+  text-decoration: none;
+  @media screen and (max-width: 776px) {
+    font-size: 32px;
+  }
+  a:hover {
+    color: white !important;
+  }
+}
+
+// Nicely fits font awesome into body text
+.small-icon {
+  font-size: 18px;
+}
+
+.feature {
+  padding-bottom: 50px;
+}
+
+.feature:last-child {
+  padding-bottom: 0px;
+}
+
+.feature-img {
+  width: 65%;
+}
+
+.feature-portfolio {
+  background-color: blue;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.feature-portfolio:last-child {
+  margin-right: 0px;
+}
+
+/**
+ * Body
+ */
+
+.feature-text {
+  font-size: 24px;
+  font-family: 'Assistant';
+  font-weight: 600;
+}
+
+.feature-text-marker {
+  color: #EA3546;
+}
+
+.portfolio-text-meta {
+  font-size: 14px;
+}
+
 
 /**
  * Footer
@@ -18,8 +148,8 @@
 }
 
 .footer {
-  border-top: 1px solid $grey-color-light;
-  margin-top: 12px;
+  margin-top: 8px;
+  box-shadow: 0 5px 5px -5px #d3d3d3 inset;
 
   .container {
     margin-top: 16px;
@@ -27,33 +157,12 @@
   }
 
   .contents {
+    font-family: 'Assistant';
+    font-weight: 800;
     text-align: center;
   }
 }
 
-/**
- * Buttons
- */
-
-#social-icons {
-  text-align: center;
-  ul.align {
-    text-align: center;
-  }
-  ul li {
-    display: inline-block;
-    zoom:1;
-  }
-}
-
-.button {
-  margin-right: 10px;
-  font-size: 26px;
-  vertical-align: middle;
-  justify-content: center;
-  color: $brand-color;
-  text-decoration: none;
-}
 
 #videos {
   ul {
@@ -69,10 +178,6 @@
  * Content
  */
 
-h1.name {
-  text-align: center;
-}
-
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
@@ -83,74 +188,6 @@ h1.name {
   width: 25%;
   display: block;
   margin: auto;
-}
-
-.card {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.35s;
-
-  .row {
-    display: flex;
-  }
-  .col-9 {
-    flex: 9;
-    order: 2;
-    .card-body {
-      padding-left: 0px;
-    }
-  }
-  .col-3 {
-    flex: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #title {
-    margin-top: 12px;
-  }
-  #description {
-    margin-right: 12px;
-  }
-
-  #icon {
-    font-size: 50px;
-    @media screen and (max-width: 576px) {
-      font-size: 42px;
-    }
-    margin-bottom: 0px;
-  }
-}
-
-/* On mouse-over, add a deeper shadow */
-.card {
-  transition: transform 0.35s; /* Animation */
-  #icon {
-    transition: transform 350ms;
-  }
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.01);
-
-  /* Animate the emoji when hovered */
-  #icon {
-    transform: scale(1.15);
-  }
-}
-
-/**
- * Icons
- */
-
-.icons {
-  color: $brand-color;
-  font-size: 36px;
-  margin-right: 10px;
 }
 
 /**

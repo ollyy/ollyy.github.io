@@ -3,6 +3,8 @@ author: Olly Wiggins
 email: olly@ojw.me
 dbs: July 2019
 
+host: 0.0.0.0
+
 # generate social links in footer
 social:
   linkedin: https://linkedin.com/in/olly/
