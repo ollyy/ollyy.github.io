@@ -1,15 +1,12 @@
 title: Olly Wiggins
 author: Olly Wiggins
 email: olly@ojw.me
-dbs: July 2019
 
 host: 0.0.0.0
 
 # generate social links in footer
 social:
   linkedin: https://linkedin.com/in/olly/
-  lastfm: https://last.fm/user/ollyyj
-  instagram: https://instagram.com/ollywiggins
 
 minima:
   date_format: "%b %-d, %Y"

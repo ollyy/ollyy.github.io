@@ -8,7 +8,7 @@ h1 {
   font-size: 156px;
   letter-spacing: -4px;
   margin-bottom: 0px;
-  @media screen and (max-width: 776px) {
+  @media screen and (max-width: 766px) {
     font-size: 78px;
   }
 }
@@ -18,17 +18,17 @@ h2 {
   font-size: 48px;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  @media screen and (max-width: 776px) {
+  @media screen and (max-width: 766px) {
     font-size: 32px;
   }
 }
+// body headings 
 h3 {
   font-family: 'Assistant';
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 1px;
   margin-bottom: 15px;
-  @media screen and (max-width: 776px) {
+  @media screen and (max-width: 766px) {
     font-size: 32px;
   }
 }
@@ -37,7 +37,7 @@ h4 {
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 1px;
-  @media screen and (max-width: 776px) {
+  @media screen and (max-width: 766px) {
     font-size: 28px;
   }
 }
@@ -46,28 +46,21 @@ h4 {
   display: flex;
 }
 
-.header-gradient {
-  background: rgb(46,67,137);
-  background: linear-gradient(135deg, rgba(43,80,170,1) 0%, rgba(244,91,105,1) 100%);
-}
-
 .body-gradient {
   background: rgb(46,67,137);
   background: linear-gradient(135deg, rgba(43,80,170,1) 0%, rgba(244,91,105,1) 100%);
+  background-repeat: no-repeat;
+  min-height: 36em;
 }
 
 .header-parralax {
   min-height: 36em;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .header-body {
   color: white;
   align-self: center;
-  @media screen and (max-width: 776px) {
+  @media screen and (max-width: 766px) {
     text-align: center;
   }
   
@@ -91,104 +84,11 @@ h4 {
   }
 }
 
-// Nicely fits font awesome into body text
-.small-icon {
-  font-size: 18px;
-}
-
-.feature {
-  padding-bottom: 50px;
-}
-
-.feature:last-child {
-  padding-bottom: 0px;
-}
-
-.feature-img {
-  width: 65%;
-}
-
-.feature-portfolio {
-  background-color: blue;
-  padding: 20px;
-  margin-right: 20px;
-}
-
-.feature-portfolio:last-child {
-  margin-right: 0px;
-}
-
 /**
  * Body
  */
 
-.feature-text {
-  font-size: 24px;
-  font-family: 'Assistant';
-  font-weight: 600;
-}
-
-.feature-text-marker {
-  color: #EA3546;
-}
-
-.portfolio-text-meta {
-  font-size: 14px;
-}
-
-
-/**
- * Footer
- */
-
-.pre-footer {
-  padding-top: 16px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.footer {
-  margin-top: 8px;
-  box-shadow: 0 5px 5px -5px #d3d3d3 inset;
-
-  .container {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  .contents {
-    font-family: 'Assistant';
-    font-weight: 800;
-    text-align: center;
-  }
-}
-
-
-#videos {
-  ul {
-    list-style-position: inside;
-    list-style-type: none;
-  }
-  li {
-    margin: 3px 0px;
-  }
-}
-
-/**
- * Content
- */
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.profile-img {
-  height: 25%;
-  width: 25%;
-  display: block;
-  margin: auto;
-}
+// TODO 
 
 /**
  * Lists

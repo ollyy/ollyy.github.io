@@ -1,4 +1,4 @@
-# ollyyj.github.io
-My small corner of the internet. Based on the Jekyll minima theme.
+# ollyyj.github.io / ojw.me
+My small corner of the internet. Now with gradients!
 
 🌍 [ojw.me](https://ojw.me)

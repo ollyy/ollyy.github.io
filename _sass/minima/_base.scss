@@ -12,23 +12,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: $dark-background-color !important;
-    color: $dark-text-color !important;
-  }
-  p {
-    color: $dark-text-color !important;
-  }
-
-  .header-gradient { 
-    background: $dark-background-color !important;
-  }
-
-  .footer {
-    border-top: 0px solid !important;
-    box-shadow: 0 0px 0px -0px #d3d3d3 inset !important;
-  }
-
+  // TODOs
 }
 
 /**
@@ -86,6 +70,7 @@ a:hover {
 // Ensure social media buttons are white
 a.social-button {
   color: white;
+  display: inline-block;
 }
 
 a.social-button:hover {
@@ -113,8 +98,8 @@ blockquote {
  .wrapper {
    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-   margin-right: auto;
-   margin-left: auto;
+   margin-right: 15%;
+   margin-left: 15%;
    padding-right: $spacing-unit / 2;
    padding-left: $spacing-unit / 2;
    padding-top: $spacing-unit * 2;
