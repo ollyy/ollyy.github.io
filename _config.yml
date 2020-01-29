@@ -1,8 +1,4 @@
-title: Olly Wiggins
-author: Olly Wiggins
-email: olly@ojw.me
-
-host: 0.0.0.0
+title: hey. i'm olly.
 
 # generate social links in footer
 social:
@@ -17,4 +13,3 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
- - jekyll-stickyposts

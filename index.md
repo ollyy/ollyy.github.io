@@ -1,5 +1,5 @@
 ---
 layout: default
-title: i'm olly.
-subtitle: welcome to my site.
+strapline: hey. i'm olly.
+tagline: i'm still working on this.
 ---

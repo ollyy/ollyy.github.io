@@ -1,21 +1,14 @@
 <html>
   {%- include head.html -%}
-  <body class="body-gradient">
-    <main class="header-main header-parralax">
-      <div class="wrapper header-body">
-        <div>
-          <h1 data-tilt 
-              data-tilt-full-page-listening 
-              data-tilt-perspective="1000" 
-              data-tilt-gyroscope="true">
-              {{ page.title }}</h1>
-          <h2>{{ page.subtitle }}</h2>
-        </div>
-        <div>
-          <a class="social-button" href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+  <body>
+    <main class="container">
+      <div class="content-container">
+        <h1>{{ page.strapline }}</h1>
+        <h2>{{ page.tagline }}</h2>
+        <a href="{{ site.social.linkedin }}">
+          <i class="fab fa-linkedin icon"></i>
+        </a>
       </div>
-    </main> 
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    </main>
   </body>
 </html>

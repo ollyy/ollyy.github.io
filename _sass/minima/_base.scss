@@ -11,10 +11,6 @@ body {
   height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  // TODOs
-}
-
 /**
  * Basic styling
  */
@@ -31,10 +27,6 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-p {
-  color: $text-color;
 }
 
 /**
@@ -54,43 +46,6 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-/**
- * Links
- */
-
-a {
-  color: $accent-color;
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: darken($accent-color, 10%);
-}
-
-// Ensure social media buttons are white
-a.social-button {
-  color: white;
-  display: inline-block;
-}
-
-a.social-button:hover {
-  color: darken(white, 5%) !important;
-}
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  font-size: 15px;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
 
 /**
  * Wrapper
@@ -122,30 +77,3 @@ blockquote {
   clear: both;
 }
 
-/**
- * Tables
- */
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
-  }
-}
