@@ -57,10 +57,6 @@ body#main {
     font-size: 4vw;
   }
   
-  .icon {
-    padding-right: 5px;
-  }
-  
   a, a:hover {
     text-decoration: none;
     color: inherit;
@@ -84,10 +80,10 @@ body#main {
     color: black;
     font-family: 'Assistant';
     font-weight: 800;
-    font-size: 7vw;
+    font-size: 100px;
     letter-spacing: -4px;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
       font-size: 12vw;
       letter-spacing: -3px;
     }
@@ -98,12 +94,17 @@ body#main {
     content: "// ";
   }
 
+  a {
+    color: #145C9E;
+  }
+
   h3 {
     color: black;
     font-family: 'Assistant';
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 30px;
     letter-spacing: -1px;
+    padding-top: 25px;
 
     @media screen and (max-width: 700px) {
       font-size: 5vw;
@@ -112,11 +113,24 @@ body#main {
   }
 
   ul {
-    list-style-position: inside;
+    //list-style-position: inside;
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+  }
+
+  ul li:before {
+    content: "»";
+    position: absolute;
+    left: 0;
   }
 
   ul > li {
-    font-size: 1.5vw;
+    font-size: 22px;
+    @media screen and (max-width: 700px) {
+      font-size: 4vw;
+    }
   }
 
   .content-container {
@@ -155,4 +169,8 @@ body#main {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
+}
+
+.icon {
+  padding-right: 5px;
 }
