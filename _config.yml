@@ -4,6 +4,7 @@ url: ojw.me
 # generate social links in footer
 social:
   linkedin: https://linkedin.com/in/olly/
+  github: https://github.com/ollyyj/ollyyj.github.io
   project: https://www.instagram.com/p/B3rGCi-BLhE/
 
 minima:

@@ -5,7 +5,7 @@
       <div class="content-container">
         <h1>{{ page.strapline }}</h1>
         <div>
-          <a href="{{site.social.linkedin}}">
+          <a href="{{site.social.linkedin}}" target="_blank">
             <div class="button-container">
               <ul>
                 <li><i class="fab fa-linkedin fa-lg icon"></i></li>
@@ -13,7 +13,7 @@
               </ul>
             </div>
           </a>
-          <a href="{{site.social.project}}">
+          <a href="{{site.social.project}}" target="_blank">
             <div class="button-container">
               <ul>
                 <li><i class="fas fa-folder-open fa-lg icon"></i></li>
@@ -22,7 +22,11 @@
             </div>
           </a>
         </div>
+        <p>{{ page.content }}</p>
       </div>
     </main>
+    <footer>
+      <a href="{{site.social.github}}" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+    </footer>
   </body>
 </html>
