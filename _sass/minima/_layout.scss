@@ -11,6 +11,7 @@ body#main {
   margin: 0;
   background-size: 200% 200%;
 
+
   -webkit-animation: gradientAnimator 15s ease infinite;
   -moz-animation: gradientAnimator 15s ease infinite;
   animation: gradientAnimator 15s ease infinite;
@@ -61,11 +62,21 @@ body#main {
     text-decoration: none;
     color: inherit;
   }
+
+  .container {
+    min-height: calc(100vh - 40px);
+    width: $content-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
   
   .content-container {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 25px;
   }
 
@@ -133,8 +144,20 @@ body#main {
     }
   }
 
+  .container {
+    min-height: calc(100vh - 40px);
+    width: $content-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
   .content-container {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 25px;
   }
 
@@ -143,14 +166,6 @@ body#main {
 /* 
   GENERIC STYLING OPTIONS 
 */
-
-.container {
-  display: table;
-  min-height: calc(100vh - 40px);
-  padding: 0;
-  margin: 0 auto;
-  width: $content-width;
-}
 
 footer {
   text-align: center;
