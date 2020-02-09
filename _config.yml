@@ -7,12 +7,5 @@ social:
   github: https://github.com/ollyyj/ollyyj.github.io
   project: https://www.instagram.com/p/B3rGCi-BLhE/
 
-minima:
-  date_format: "%b %-d, %Y"
-
-# Build settings
-theme: minima
-
 plugins:
- - jekyll-feed
  - jekyll-seo-tag
