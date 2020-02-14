@@ -136,6 +136,11 @@ body#main {
     left: 0;
   }
 
+  ul:hover {
+    position: relative;
+    right: -1.5px;
+  }
+
   ul > li {
     font-size: 22px;
     @media screen and (max-width: 700px) {
