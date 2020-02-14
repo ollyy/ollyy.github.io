@@ -4,7 +4,7 @@
     <main class="container">
       <div class="content-container">
         <h1>{{ page.strapline }}</h1>
-        <h3 class="tagline">{{ page.tagline }}</h3>
+        <h3 style="padding-top: 0px;">{{ page.tagline }}</h3>
         <h3><i class="fas fa-video fa-sm icon"></i> <strong>video.</strong></h3>
         {%- if site.categories.entries.size > 0 -%}
           {%- for post in site.categories.entries -%}
