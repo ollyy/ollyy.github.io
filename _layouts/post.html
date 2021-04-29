@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="row">
+        <article id="blog-container" class="col-xl-12">
+          <div id="blog-header-img">
+            <img class="heading-img breakout" src="/assets/img/posts/{{ page.heading-img }}" />
+          </div>
+          <div class="col-xl-6 align-self-center" id="blog-container">
+            <div id="blog-header">
+              <h1>{{ page.title }}</h1>
+              <p>{{ page.author }}, {{ page.date | date_to_long_string }}</p>
+              <h3>{{ page.byline }}</h3>
+            </div>
+            <div id="blog-content">
+              <p>{{ content }}</p>
+            </div>
+            <div id="buy-me-coffee">
+              <h1>What do you think?</h1>
+              <p>If you enjoyed my blog post, consider buying me a coffee milkshake. 🥤 It's just <strong>£4</strong> and the money goes towards more trips to the coffee shop <em>(where I write most of my work).</em></p>
+              <a href="https://www.buymeacoffee.com/ollyw" target="_blank" class="btn btn-dark btn-lg" role="button">Buy me a coffee milkshake 🥤</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      {% include footer.html %}
+    </div>
+    <script src="/assets/js/images.js"></script>
+  </body>
+</html>

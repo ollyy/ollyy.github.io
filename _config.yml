@@ -1,11 +1,21 @@
-title: hey. i'm olly.
-url: https://ojw.me
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - premonition
 
-# generate social links in footer
+title: Olly Wiggins
+tagline: The personal blogging and portfolio site for Olly Wiggins.
+description:
+url: ojw.me
+author: Olly Wiggins
+
+twitter:
+  username: ollywiggins_
+  card: summary
+
+excerpt_separator: <!--more-->
+
 social:
   linkedin: https://linkedin.com/in/olly/
-  github: https://github.com/ollyyj/ollyyj.github.io
-  project: https://www.instagram.com/p/B3rGCi-BLhE/
-
-plugins:
- - jekyll-seo-tag
+  twitter: https://twitter.com/ollywiggins_
+  youtube: https://www.youtube.com/channel/UCp7oMylSKVYKUiPRxqE6E8A

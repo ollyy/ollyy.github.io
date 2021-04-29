@@ -1,23 +1,45 @@
-<html>
-  {%- include head.html -%}
-  <body id="main">
-    <main class="container">
-      <div class="content-container">
-        <h1>{{ page.strapline }}</h1>
-        <div>
-          <a href="{{site.social.linkedin}}" target="_blank">
-            <div class="button-container">
-              <ul>
-                <li><i class="fab fa-linkedin fa-2x icon"></i></li>
-              </ul>
-            </div>
-          </a>
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="row justify-content-center">
+        <div class="col-xl-6 ripple">
+          <img class="ripple-medium ripple-rounded" src="/assets/img/olly.jpeg" />
         </div>
-        <p>{{ page.content }}</p>
       </div>
-    </main>
-    <footer>
-      <a href="{{site.social.github}}" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-    </footer>
+      <div class="row justify-content-center">
+        <div id="profile-card" class="col-xl-8">
+          <h1 class="typo-m typo-center">Hello 👋</h1>
+          <h1 class="brand-adjust typo-x typewrite text-center" data-period="2000" data-type='[ "I&#39;m Olly", "I&#39;m /in/olly", "I&#39;m @ollywiggins_"]'>
+            <span class="wrap text-center"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div id="about" class="col-xl-6  align-self-center">
+          <p>{{ content }}</p>
+        </div>
+      </div>
+      <!-- <div class="row justify-content-center">
+        <div class="col-xl-6 align-self-center">
+          <h2 class="typo-center">Find me online</h2>
+          <div id="social-buttons">
+            <a href='{{ site.social.linkedin }}' target="_blank" class='big-btn'>
+              <i class="btn-icon fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href='{{ site.social.twitter }}' target="_blank" class='big-btn'>
+              <i class="btn-icon fab fa-twitter fa-2x"></i>
+            </a>
+            <a href='{{ site.social.youtube }}' target="_blank" class='big-btn'>
+              <i class="btn-icon fab fa-youtube fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      {% include footer.html %}
+    </div>
+    <script src="/assets/js/typewriter.js"></script>
   </body>
 </html>
