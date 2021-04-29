@@ -133,6 +133,12 @@ img {
   width: 100%;
 }
 
+img.profile {
+  max-width: 250px;
+  border-radius: 200px;
+  margin: 0 auto;
+}
+
 figcaption {
   font-family: 'IBM Plex Serif', Helvetica, sans-serif;
   font-style: italic;
