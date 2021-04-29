@@ -1,4 +1,4 @@
-# ollyyj.github.io / ojw.me
-My small corner of the internet. Now with gradients!
+# ojw.me
+My small corner of the internet.
 
 🌍 [ojw.me](https://ojw.me)
