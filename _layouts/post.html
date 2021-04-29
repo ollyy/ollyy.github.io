@@ -5,18 +5,19 @@
     <div class="container">
       {% include header.html %}
       <div class="row">
-        <article id="blog-container" class="col-xl-12">
+        <article id="blog-container" class="col-xl-6">
           <div id="blog-header-img">
             <img class="heading-img breakout" src="/assets/img/posts/{{ page.heading-img }}" />
           </div>
-          <div class="col-xl-6 align-self-center" id="blog-container">
+          <div class="align-self-center" id="blog-container">
             <div id="blog-header">
+              <small>{{ page.date | date_to_long_string }}</small>
               <h1>{{ page.title }}</h1>
-              <p>{{ page.author }}, {{ page.date | date_to_long_string }}</p>
+              <hr class="short short-dark">
               <h3>{{ page.byline }}</h3>
             </div>
             <div id="blog-content">
-              <p>{{ content }}</p>
+              {{ content }}
             </div>
             <div id="buy-me-coffee">
               <h1>What do you think?</h1>
