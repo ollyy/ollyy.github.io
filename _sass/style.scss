@@ -49,15 +49,6 @@
   }
 }
 
-// BRAND TYPOGRAPHY SETTINGS
-
-.typo-center {
-  text-align: center;
-}
-.typo-white {
-  color: $snow-white;
-}
-
 // SITE ELEMENTS 
 
 hr {
@@ -187,10 +178,6 @@ hr.short {
   small {
     text-transform: uppercase;
   }
-}
-
-#blog-author {
-  margin: 2em 0;
 }
 
 #blog-content {
