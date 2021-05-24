@@ -2,34 +2,19 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="container">
+    <div class="container gx-4">
       {% include header.html %}
       <div class="row justify-content-center">
-        <div id="page-heading" class="col-xl-12">
-          <h1 class="brand-adjust typo-xl">{{ page.title }}</h1>
+        <div id="page-heading" class="col-sm-12 col-md-8 col-lg-6">
+          <h1 class="d-mod d-mod-xl d-mod-margin-remove">{{ page.title }}</h1>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div id="page-content" class="col-xl-6 align-self-center paragraph-break">
+        <div id="page-content" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 align-self-center paragraph-break">
           <p>{{ content }}</p>
         </div>
       </div>
       {% include footer.html %}
     </div>
   </body>
-  <!-- <script>
-    const pattern = trianglify({
-      cellSize: 75,
-      variance: 0.75,
-      width: 1440,
-      xColors: ['0466C8', '0353A4', '023E7D', '002855', '001845', '001233'],
-      yColors: 'match',
-      seed: null,
-      fill: true,
-    })
-
-    // Render to Canvas
-    document.body.appendChild(pattern.toCanvas())
-
-  </script> -->
 </html>

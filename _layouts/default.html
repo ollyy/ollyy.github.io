@@ -2,23 +2,23 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="container">
+    <div class="container gx-4">
       {% include header.html %}
       <div class="row justify-content-center">
-        <div class="col-xl-6 align-self-center">
+        <div class="col-6">
           <img class="profile d-block" src="/assets/img/olly.jpeg" />
         </div>
       </div>
       <div class="row justify-content-center">
-        <div id="profile-card" class="col-xl-8">
-          <h1 class="typo-m text-center">Hello 👋</h1>
-          <h1 class="brand-adjust typo-x typewrite text-center" data-period="2000" data-type='[ "I&#39;m Olly", "I&#39;m /in/olly", "I&#39;m @ollywiggins_"]'>
+        <div id="profile-card" class="col-sm-12">
+          <h1 class="d-mod d-mod-x d-mod-margin-remove text-center">Hello 👋</h1>
+          <h1 class="d-mod d-mod-x d-mod-margin-remove typewrite text-center" data-period="2000" data-type='[ "I&#39;m Olly", "I&#39;m /in/olly", "I&#39;m @ollywiggins_"]'>
             <span class="wrap text-center"></span>
           </h1>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div id="about" class="col-xl-6  align-self-center">
+        <div id="about" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 align-self-center">
           <p>{{ content }}</p>
         </div>
       </div>

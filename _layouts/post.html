@@ -2,19 +2,19 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="container">
+    <div class="container gx-4">
       {% include header.html %}
       <div class="row">
-        <article id="blog-container" class="col-xl-6">
+        <article id="blog-container" class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
           <div id="blog-header-img">
             <img class="heading-img breakout" src="/assets/img/posts/{{ page.heading-img }}" />
           </div>
           <div class="align-self-center" id="blog-container">
             <div id="blog-header">
               <small>{{ page.date | date_to_long_string }}</small>
-              <h1>{{ page.title }}</h1>
+              <h1 class="d-mod">{{ page.title }}</h1>
               <hr class="short short-dark">
-              <h3>{{ page.byline }}</h3>
+              <h3 class="byline">{{ page.byline }}</h3>
             </div>
             <div id="blog-content">
               {{ content }}
