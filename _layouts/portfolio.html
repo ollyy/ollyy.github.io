@@ -10,25 +10,15 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div id="page-content" class="col-sm-12 col-md-8 col-lg-6 align-self-center">
-          <p>{{ content }}</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
         <div id="preview-list" class="col-sm-12 col-md-8 col-lg-6 align-self-center">
           <ul>
             {% for post in site.categories.portfolio %}
               <li>
                 <a href="{{ post.embed }}" target="_blank" rel="noopener">
-                  <div class="row justify-content-center">
-                    <div class="col-xl-2 align-self-center">
-                      <i class="{{ post.icon_id }} fa-3x"></i>
-                    </div>
-                    <div class="col-xl-10 align-self-center">
-                      <h2>{{ post.title }}</h2>
-                      <small>{{ post.role }}</small>
-                      <p>{{ post.content }}</p>
-                    </div>
+                  <div class="img-txt-container">
+                    <h2 class="">{{ post.title }}</h2>
+                    <span class="badge bg-success">{{ post.role }}</span>
+                    <img src="/assets/img/demo/{{ post.thumbnail }}" />
                   </div>
                 </a>
               </li>
