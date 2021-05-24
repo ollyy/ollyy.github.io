@@ -15,10 +15,14 @@
             {% for post in site.categories.portfolio %}
               <li>
                 <a href="{{ post.embed }}" target="_blank" rel="noopener">
-                  <div class="img-txt-container">
-                    <h2 class="">{{ post.title }}</h2>
-                    <span class="badge bg-success">{{ post.role }}</span>
-                    <img src="/assets/img/demo/{{ post.thumbnail }}" />
+                  <div class="row img-txt-container">
+                    <div class="col-md-6 col-sm-7">
+                      <h3>{{ post.title }}</h2>
+                      <span class="badge bg-success">{{ post.role }}</span>
+                    </div>
+                    <div class="col-md-6 col-sm-5 g-0">
+                      <img src="/assets/img/portfolio/thumbnails/{{ post.thumbnail }}" />
+                    </div>
                   </div>
                 </a>
               </li>

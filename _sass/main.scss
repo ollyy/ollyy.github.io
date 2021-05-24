@@ -185,6 +185,10 @@ pre>code {
   }
 }
 
+.navbar-toggler {
+  padding: 1em 0 1em 0;
+}
+
 .navbar-items-left {
   display: flex;
 }
@@ -326,12 +330,40 @@ table td {
   blockquote {
     font-size: 1em !important;
   }
+  #page-heading {
+    margin: 3em 0 !important;
+  }
+  #preview-list li:not(:last-child) {
+    margin-bottom: 1em !important;
+  }
+  .img-txt-container {
+    > div {
+      margin-bottom: 1em !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .d-mod {
-    font-size: 2em !important;
+    font-size: 3.5em !important;
     text-transform: none !important;
     letter-spacing: -1px !important;
+  }
+  #page-heading {
+    margin: 3em 0 !important;
+  }
+  #preview-list li:not(:last-child) {
+    margin-bottom: 1em !important;
+  }
+  .img-txt-container {
+    background-color: #fafafa !important;
+    border-radius: 5px !important;
+    padding: 1em 0 1em 0 !important;
+
+    text-align: center;
+
+    > div {
+      margin-bottom: 1em !important;
+    }
   }
 }

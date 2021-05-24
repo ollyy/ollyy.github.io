@@ -150,41 +150,23 @@ hr.short {
 }
 
 .img-txt-container {
-  position: relative;
-  text-align: center;
-  color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
 
   img {
-    filter: brightness(50%);
-  }
-
-  h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-
-    color: white;
-    text-shadow: 1px 1px 8px rgba(17,17,17,.2);
-
-  }
-
-  span {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    z-index: 999;
+    opacity: 1;
+    transition: 0.3s;
   }
 }
 
 .img-txt-container:hover {
+  background-color: #ededed;
+
   img {
-    filter: brightness(100%);
+    opacity: .8;
   }
-  h2 {
-    display: none;
-  }
+
 }
 
 
