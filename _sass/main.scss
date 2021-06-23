@@ -239,7 +239,7 @@ li>ol {
 
 /** Links */
 
-#blog-content a, #page-content a {
+#page-content a {
   color: #0466C8;
   font-weight: 700;
   text-decoration: underline;
@@ -248,7 +248,7 @@ li>ol {
   transition: all 0.2s ease-in-out;
 }
 
-#blog-content a:hover, #page-content a:hover {
+#page-content a:hover {
   color: #000;
   background-color: #FFD917;
   text-decoration: none;
