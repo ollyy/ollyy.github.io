@@ -1,7 +1,7 @@
 ---
 layout: placeholder
 title:  "Microsoft: Creativity in the Digital Age"
-role: "Assistant Producer" 
+role: "Production Assistant" 
 embed: "https://youtu.be/vrRG6B1uqjk"
 icon_id: fab fa-microsoft
 thumbnail: microsoft.jpg
