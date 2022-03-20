@@ -1,19 +1,57 @@
+site: Olly Wiggins
+
+url: https://ojw.me
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
 plugins:
+  - jekyll-paginate
   - jekyll-sitemap
 
-title: Olly Wiggins
-tagline: The portfolio site of Olly Wiggins.
-description:
-url: ojw.me
-author: Olly Wiggins
-
-twitter:
-  username: ollywiggins_
-  card: summary
-
-excerpt_separator: <!--more-->
-
-social:
-  linkedin: https://linkedin.com/in/olly/
-  twitter: https://twitter.com/ollywiggins_
-  youtube: https://www.youtube.com/channel/UCp7oMylSKVYKUiPRxqE6E8A
+paginate: 6
+paginate_path: "/blog/page:num/"
+  
