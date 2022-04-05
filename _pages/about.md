@@ -1,8 +1,8 @@
 ---
 title: Hey! I'm Olly.
-subtitle: 
-description:
-featured_image: 
+subtitle: Thanks for stopping by.
+description: Welcome to my website. Here you will find a selection of my work.
+featured_image: /images/profile-2.jpg
 ---
 
 ![](/images/profile-2.jpg)
