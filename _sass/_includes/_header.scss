@@ -93,6 +93,23 @@
 	}
 }
 
+.header__subtitle {
+	margin-top: 20px;
+	font-size: $sitetagline-small;
+	font-weight: $sitetagline-weight;
+	letter-spacing: $sitetagline-spacing;
+	line-height: $sitetagline-lineheight;
+	color: $text-medium-color;
+
+	@include mq(tabletp) {
+		font-size: $sitetagline-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $sitetagline-large;
+	}
+}
+
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu

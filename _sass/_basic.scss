@@ -284,6 +284,14 @@ hr {
 	background: $border-color;
 }
 
+hr.secondary {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 0;
+	height: 1px;
+	background: $border-color;
+}
+
 ::selection 	 { background: $accent-color; color: $background-color; }
 ::-moz-selection { background: $accent-color; color: $background-color; }
 
