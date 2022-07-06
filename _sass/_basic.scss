@@ -128,6 +128,18 @@ h6, .h6 {
 	}
 }
 
+.mobile-only {
+	@include mq(phonel) {
+		display: none;
+	}
+}
+
+.sidebar-heading {
+	color: $text-medium-color;
+	text-transform:uppercase;
+	font-weight:400;
+}
+
 p, ul, ol {
 	margin-top: 15px;
 	font-size: $p-small;

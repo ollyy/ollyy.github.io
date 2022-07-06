@@ -6,6 +6,7 @@ description: ''
 featured_image: '/images/thumbnails/nordoff.jpg'
 featured: 'false'
 isURL: 'false'
+project_type: video
 ---
 
 In 2019 I volunteered as a videographer for Nordoff Robbins. I filmed and edited this promotional video from the 'Big Busk' event at the O2 Arena.

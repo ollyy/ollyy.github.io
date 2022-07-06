@@ -6,6 +6,7 @@ description: ''
 featured_image: '/images/photo/chic/MIDNIGHT-CHIC-3.jpg'
 featured: 'false'
 isURL: 'false'
+project_type: photo
 ---
 Behind the scenes photos from Midnight Chic's music video "Can't Get Enough".
 

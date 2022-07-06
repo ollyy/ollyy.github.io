@@ -1,11 +1,13 @@
 ---
 title: 'Metropolis Studios'
-subtitle: 'Shot at Metropolis Studios'
+subtitle: ''
 date: 2022-01-10 00:00:00
 description: ''
 featured_image: '/images/photo/metropolis/METROPOLIS-2.jpg'
 featured: 'true'
 isURL: 'false'
+project_type: photo
+feature_on_mobile: 'true'
 ---
 
 All photos and videos lovingly shot by me at Metropolis Studios. 

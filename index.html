@@ -5,33 +5,47 @@ description: Olly Wiggins' Portfolio
 featured_image: /images/profile-2.jpg
 ---
 
+<!-- dynamically change page background based on colour palette of photos -->
 <section class="portfolio">
 
-	<div class="content-wrap portfolio-wrap">
+	<div class="content-wrap portfolio-wrap mobile-only">
 
 		{% for project in site.projects reversed %}
+			{% if project.feature_on_mobile == "true" %}
 
-		<div class="portfolio-item">
+				<div class="portfolio-item">
 
-			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
+					<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
 
-				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+						<div class="portfolio-item__image">
+							<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+						</div>
+
+						<div class="portfolio-item__content">
+							<div class="portfolio-item__info">
+								<h2 class="portfolio-item__title">{{ project.title }}</h2>
+								<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+							</div>
+						</div>
+
+					</a>
+
 				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
+			{% endif %}
 
 		{% endfor %}
+	</div>
 
+	<div class="content-wrap portfolio-wrap">
+		<div class="gallery" data-columns="1">
+			<img src="/images/photo/gigs/great-escape-acm-5.jpg">
+			<img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-4.jpg">
+			<img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-1.jpg">
+			<img src="/images/photo/gigs/great-escape-acm-1.jpg">
+			<img src="/images/photo/gigs/GIG-1.jpg">
+			<img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-3.jpg">
+			<img src="/images/photo/metropolis/METROPOLIS-2.jpg">
+		</div>
 	</div>
 
 </section>
