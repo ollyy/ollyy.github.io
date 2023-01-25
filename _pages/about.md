@@ -7,7 +7,7 @@ featured_image: /images/profile-2.jpg
 
 ![](/images/profile-2.jpg)
 
-I'm a videographer, photographer and digital maestro based in London. Since 2018 I have worked with Metropolis Studios, Microsoft and Nordoff Robbins (just to name a few) on a number of productions and edits — all of which can be found on the homepage. 
+I'm a videographer, photographer and digital maestro based in London. Since 2018 I have worked with PRS, Metropolis Studios, Microsoft and Nordoff Robbins (just to name a few) on a number of productions and edits — all of which can be found on the homepage. 
 
 Music has a fond place in my heart and I always try to incorporate it into my work. Therefore, you’ll typically see me working with musicians to produce beautifully shot photos and videos.
 

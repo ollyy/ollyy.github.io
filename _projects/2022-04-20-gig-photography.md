@@ -11,6 +11,10 @@ feature_on_mobile: 'true'
 ---
 
 <div class="gallery" data-columns="2">
+    <img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg">
+    <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-2.jpg">
+    <img src="/images/photo/gigs/web_LewysJonesNYEGig-2.jpg">
+    <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-1.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-1.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-2.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-3.jpg">
@@ -18,7 +22,6 @@ feature_on_mobile: 'true'
     <img src="/images/photo/gigs/great-escape-acm-5.jpg">
     <img src="/images/photo/gigs/great-escape-acm-1.jpg">
     <img src="/images/photo/gigs/great-escape-acm-2.jpg">
-    <img src="/images/photo/gigs/great-escape-acm-3.jpg">
     <img src="/images/photo/gigs/great-escape-acm-4.jpg">
     <img src="/images/photo/gigs/great-escape-acm-6.jpg">
     <img src="/images/photo/gigs/great-escape-acm-7.jpg">
