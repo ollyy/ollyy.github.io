@@ -7,6 +7,7 @@ featured_image: '/images/thumbnails/spitfire-audio.jpg'
 featured: 'true'
 isURL: 'false'
 project_type: video
+feature_on_mobile: 'false'
 ---
 
 Check out some of the work I have done for Spitfire Audio so far: 

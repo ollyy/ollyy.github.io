@@ -7,7 +7,7 @@ featured_image: '/images/thumbnails/alyssa_palmer.jpg'
 featured: 'false'
 isURL: 'false'
 project_type: video
-feature_on_mobile: 'true'
+feature_on_mobile: 'false'
 ---
 
 I had the pleasure of filming Alyssa Palmer's EP Launch Party. This is the 'Aftermovie' edit I created shortly after.

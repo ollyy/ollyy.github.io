@@ -7,6 +7,7 @@ featured_image: '/images/photo/shot-on-film/web_HONEY-ALBUM-LAUNCH-2.jpg'
 featured: 'true'
 isURL: 'false'
 project_type: photo
+feature_on_mobile: 'false'
 ---
 
 <div class="gallery" data-columns="2">

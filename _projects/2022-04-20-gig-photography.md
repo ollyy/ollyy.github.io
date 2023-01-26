@@ -7,7 +7,7 @@ featured_image: '/images/photo/gigs/AK-GIG-WEB-EXPORT-4.jpg'
 featured: 'true'
 isURL: 'false'
 project_type: photo
-feature_on_mobile: 'true'
+feature_on_mobile: 'false'
 ---
 
 <div class="gallery" data-columns="2">
