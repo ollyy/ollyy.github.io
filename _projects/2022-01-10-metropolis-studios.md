@@ -4,10 +4,10 @@ subtitle: ''
 date: 2022-01-10 00:00:00
 description: ''
 featured_image: '/images/photo/metropolis/METROPOLIS-2.jpg'
-featured: 'true'
+featured: 'false'
 isURL: 'false'
 project_type: photo
-feature_on_mobile: 'true'
+feature_on_mobile: 'false'
 ---
 
 All photos and videos lovingly shot by me at Metropolis Studios. 
