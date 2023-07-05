@@ -15,8 +15,8 @@ menu_settings:
       url: '/photography'
     - title: 'Videos'
       url: '/videography'
-    - title: 'Motion'
-      url: '/motion'
+    # - title: 'Motion'
+    #   url: '/motion'
     - title: 'About'
       url: '/about'
 
