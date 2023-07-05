@@ -15,6 +15,7 @@ feature_on_mobile: 'false'
     <img src="/images/photo/gigs/crs0028_LauraBrixtonJammSetPhotos-3.jpg">
     <img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg">
     <img src="/images/photo/gigs/web_LewysJonesNYEGig-2.jpg">
+    <img src="/images/photo/gigs/bumb-launch-party-6.jpg">
     <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-1.jpg">
     <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-2.jpg">
 </div>
