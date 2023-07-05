@@ -129,9 +129,19 @@ h6, .h6 {
 }
 
 .mobile-only {
-	@include mq(phonel) {
+	@include mq(desktop) {
 		display: none;
 	}
+	@include mq(laptop) {
+		display: none;
+	}
+	@include mq(tabletl) {
+		display: none;
+	}
+}
+
+.desktop-only {
+
 }
 
 .sidebar-heading {

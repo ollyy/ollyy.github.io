@@ -27,7 +27,15 @@
 }
 
 .gallery--on {
-	visibility: visible;
+	@include mq(desktop) {
+		visibility: visible;
+	}
+	@include mq(laptop) {
+		visibility: visible;
+	}
+	@include mq(tabletl) {
+		visibility: visible;
+	}
 }
 
 .gallery__item {

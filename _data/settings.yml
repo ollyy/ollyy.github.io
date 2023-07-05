@@ -100,6 +100,7 @@ font_settings:
     small_size: 22
     medium_size: 26
     large_size: 30
+    xl_size: 50
     weight: 400
     letter_spacing: -0.02
   grid_item_subtitle:

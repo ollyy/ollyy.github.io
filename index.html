@@ -9,35 +9,58 @@ featured_image: /images/profile-2.jpg
 <section class="portfolio">
 
 	<div class="content-wrap portfolio-wrap mobile-only">
+		<div class="portfolio-item force-mobile-width">
 
-		{% for project in site.projects reversed %}
-			{% if project.feature_on_mobile == "true" %}
+			<a class="tile__static" href="/videography">
 
-				<div class="portfolio-item">
-
-					<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
-
-						<div class="portfolio-item__image">
-							<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
-						</div>
-
-						<div class="portfolio-item__content">
-							<div class="portfolio-item__info">
-								<h2 class="portfolio-item__title">{{ project.title }}</h2>
-								<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-							</div>
-						</div>
-
-					</a>
-
+				<div class="portfolio-item__image">
+					<img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg" alt="">
 				</div>
-			{% endif %}
 
-		{% endfor %}
+				<div class="tile__content">
+					<div class="tile__info">
+						<h2 class="tile__title">Video</h2>
+					</div>
+				</div>
+
+			</a>
+		</div>
+		<div class="portfolio-item force-mobile-width">
+
+			<a class="tile__static" href="/photography">
+
+				<div class="portfolio-item__image">
+					<img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-4.jpg" alt="">
+				</div>
+
+				<div class="tile__content">
+					<div class="tile__info">
+						<h2 class="tile__title">Photography</h2>
+					</div>
+				</div>
+
+			</a>
+		</div>
+		<div class="portfolio-item force-mobile-width">
+
+			<a class="tile__static" href="/motion">
+
+				<div class="portfolio-item__image">
+					<img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg" alt="">
+				</div>
+
+				<div class="tile__content">
+					<div class="tile__info">
+						<h2 class="tile__title">Motion</h2>
+					</div>
+				</div>
+
+			</a>
+		</div>
 	</div>
 
-	<div class="content-wrap portfolio-wrap">
-		<div class="gallery" data-columns="1">
+	<div class="content-wrap portfolio-wrap desktop-only">
+		<div class="gallery desktop-only" data-columns="1">
 			<img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg">
 			<img src="/images/photo/shot-on-film/web_HONEY-ALBUM-LAUNCH-2.jpg">
 			<img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-1.jpg">
