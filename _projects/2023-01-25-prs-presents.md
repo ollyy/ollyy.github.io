@@ -9,8 +9,10 @@ isURL: 'false'
 project_type: video
 ---
 
-I'm a contributing videographer for the PRS Presents series, a curated programme of intimate performances, new voices, firm favourites and unique sounds. Check out the latest video in the series, recorded during the PRS Members' Day in Manchester. 
+I'm a contributing videographer for the PRS Presents series, a curated programme of intimate performances, new voices, firm favourites and unique sounds. Check out the events I've been involved with below:
 
-_(I recorded all the footage from the right hand side)!_
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RYCIjzJOYUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/doxa5yMpuSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X_ozCTyK4po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
