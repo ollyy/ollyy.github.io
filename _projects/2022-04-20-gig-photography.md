@@ -11,10 +11,6 @@ feature_on_mobile: 'false'
 ---
 
 <div class="gallery" data-columns="2">
-    <img src="/images/photo/gigs/web_LewysJonesNYEGig-1.jpg">
-    <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-2.jpg">
-    <img src="/images/photo/gigs/web_LewysJonesNYEGig-2.jpg">
-    <img src="/images/photo/gigs/RAPTURE-SUMMER-JAM-1.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-1.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-2.jpg">
     <img src="/images/photo/gigs/AK-GIG-WEB-EXPORT-3.jpg">
@@ -25,7 +21,6 @@ feature_on_mobile: 'false'
     <img src="/images/photo/gigs/great-escape-acm-4.jpg">
     <img src="/images/photo/gigs/great-escape-acm-6.jpg">
     <img src="/images/photo/gigs/great-escape-acm-7.jpg">
-    <img src="/images/photo/gigs/GIG-1.jpg">
     <img src="/images/photo/gigs/KIERRAN-CONCERT-1.jpg">
     <img src="/images/photo/gigs/GIG-2.jpg">
     <img src="/images/photo/gigs/GIG-3.jpg">
